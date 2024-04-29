@@ -1,0 +1,413 @@
+* {
+    font-family: sans-serif;
+  }
+  /*COLORES
+  
+- Morado: #5e42a6
+- Rosado: #fe7472
+- Azul: #749ffe
+- Naranja claro: #ffb274
+  
+  */
+
+  /*ESTILOS PARA ESCRITORIO*/
+  
+  @media screen and (min-width: 1024px) {
+
+    main {
+        display: flex;
+        height: 50em;
+    }
+
+    section {
+        display: flex;
+        height: 65em;
+    }
+    /*SECTION 1*/
+    #section1 {
+        flex-direction: column;
+        background-color: #5e42a6;
+        width: 30%;
+    }
+
+    #section1 > div {
+        height: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #section1 > div > img {
+        width: 70%;
+        padding: 1em;
+    }
+
+    #section1 > nav {
+        height: 69%;
+    }
+
+    #section1 > nav > div {
+        padding: 0.5em;
+        margin: 0 1em;
+        font-size: 2em;
+        text-align: right;
+        color: white;
+        border-bottom-style: solid;
+        border-color: solid, white;
+        border-width: 0.1em;
+    }
+    /*SECTION 2*/
+    #section2 {
+        background-color: white;
+        width: 69%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #section2 h1 {
+        margin: 0;
+        font-size: 3em;
+        margin: 0 1em;
+        align-self: center;
+        width: 100%;
+        color: #5e42a6;
+    }
+
+    #section2 > div {
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        width: 40%;
+        margin: 0;
+    }
+
+  }
+
+    /*ESTILOS PARA TABLETS VERTICALES*/
+
+
+  @media (min-width: 768px) and (max-width: 1024px)
+  and (orientation: portrait) { 
+
+    main {
+        display: flex;
+        height: 50em;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    section {
+        display: flex;
+        width: 100%;
+    }
+    /*SECTION 1*/
+    #section1 {
+        background-color: #5e42a6;
+        height: 18.5%;
+        padding: 0.7em 0 0 0;
+    }
+
+    #section1 > div {
+        height: 100%;
+        width: 30%;
+        display: flex;
+        justify-content:end;
+    }
+
+    #section1 > div > img {
+        width: 100%;
+    }
+
+    #section1 > nav {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #section1 > nav > div {
+        width: 25%;
+        font-size: 1.5em;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        align-self: center;
+    }
+    /*SECTION 2*/
+    #section2 {
+        background-color: white;
+        width: 100%;
+        height: 80%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #section2 h1 {
+        font-size: 3em;
+        margin: 0 1em;
+        align-self: center;
+        width: 100%;
+        color: #5e42a6;
+    }
+
+    #section2 > div {
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        width: 40%;
+        margin: 0;
+    }
+
+
+  }
+
+  /*MEDIA QUERY PARA TABLETS HORIZONTAL*/
+
+  @media (min-width: 768px) and (max-width: 1024px)
+  and (orientation: landscape) { 
+
+    main {
+        display: flex;
+        height: 50em;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    section {
+        display: flex;
+        width: 100%;
+    }
+    /*SECTION 1*/
+    #section1 {
+        background-color: #5e42a6;
+        height: 18.5%;
+        padding: 0.7em 0 0 0;
+    }
+
+    #section1 > div {
+        height: 100%;
+        width: 45%;
+        display: flex;
+        justify-content:flex-start;
+    }
+
+    #section1 > div > img {
+        width: 70%;
+    }
+
+    #section1 > nav {
+        height: 100%;
+        width: 50%;
+        display: flex;
+    }
+
+    #section1 > nav > div {
+        width: 25%;
+        font-size: 1.5em;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        align-self: center;
+    }
+    /*SECTION 2*/
+    #section2 {
+        background-color: white;
+        width: 100%;
+        height: 80%;
+        justify-content:space-around;
+        flex-wrap: wrap;
+    }
+
+    #section2 h1 {
+        height: 10%;
+        margin: 0;
+        font-size: 3em;
+        padding: 0;
+        margin: 0 0.3em;
+        align-self: center;
+        width: 100%;
+        color: #5e42a6;
+    }
+
+    #section2 > div {
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        width: 22%;
+        margin: 0;
+    }
+
+  }
+ 
+/*MEDIA QUERY PARA TELEFONOS*/
+
+@media (max-width: 576px) {
+
+    main {
+        display: flex;
+        height: 100em;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    section {
+        display: flex;
+        margin: 0;
+    }
+    /*SECTION 1*/
+    #section1 {
+        height: 40%;
+        
+        flex-direction: column;
+        background-color: #5e42a6;
+        width: 100%;
+    }
+
+    #section1 > div {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #section1 > div > img {
+        width: 70%;
+    }
+
+    #section1 > nav {
+        height: 69%;
+    }
+
+    #section1 > nav > div {
+        padding: 0.5em;
+        margin: 0 1em;
+        font-size: 2em;
+        text-align: center;
+        color: white;
+        border-bottom-style: solid;
+        border-color: solid, white;
+        border-width: 0.1em;
+    }
+    /*SECTION 2*/
+    #section2 {
+        background-color: white;
+        width: 100%;
+        height: 120em;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    #section2 h1 {
+        display: flex;
+        margin: 1em;
+        justify-content: flex-start;
+        font-size: 3em;
+        align-self: flex-start;
+        width: 100%;
+        color: #5e42a6;
+    }
+
+    #section2 > div {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        height: 50em;
+        width: 80%;
+        margin: 1em 0;
+    }
+
+}
+
+/*ESTILOS PARA TODOS LOS DISPOSITIVOS*/
+
+#section2 > div:hover {
+    transform: scale(1.02);
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    box-shadow: 1em 1em 3em grey;
+}
+
+#section2 p {
+    text-align: left;
+    height: 78%;
+    width: 100%;
+    margin: 0;
+    color: white;
+    visibility: hidden;
+} 
+
+
+#section2 > div > div {
+    width: 100%;
+    height: 19%;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: 0.5em 0 0 0;
+}
+
+
+  /*PROYECTO 1*/
+
+  #section2 > div:nth-child(2){
+    background-image: url(./images/proyecto-1.jpg);
+    background-size: 100% 100%;
+}
+
+#section2 > div:nth-child(2) > div {
+    background-color: #fe7472;
+}
+
+#section2 > div:nth-child(2):hover p {
+    visibility: visible;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+    background-color: #fe747270;
+} 
+
+/*PROYECTO 2*/
+
+#section2 > div:nth-child(3){
+    background-image: url(./images/proyecto-2.jpg);
+    background-size: 100% 100%;
+}
+
+#section2 > div:nth-child(3) > div {
+    background-color: #749ffe;
+}
+
+#section2 div:nth-child(3):hover p {
+    visibility: visible;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+    background-color: #749ffe70;
+} 
+
+/*PROYECTO 3*/
+
+#section2 > div:nth-child(4) {
+    background-image: url(./images/proyecto-3.jpg);
+    background-size: 100% 100%;
+}
+
+#section2 > div:nth-child(4) > div {
+    background-color: #5e42a6;
+}
+
+#section2 div:nth-child(4):hover p {
+    visibility: visible;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+    background-color: #5e42a670;
+} 
+
+
+/*PROYECTO 4*/
+
+#section2 > div:nth-child(5){
+    background-image: url(./images/proyecto-4.jpg);
+    background-size: 100% 100%;
+}
+
+#section2 > div:nth-child(5) > div {
+    background-color: #ffb274;
+}
+
+#section2 div:nth-child(5):hover p {
+    visibility: visible;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+    background-color: #ffb27470;
+} 
