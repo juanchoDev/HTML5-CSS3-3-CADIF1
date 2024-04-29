@@ -1,0 +1,233 @@
+/* DURANTE EL DESARROLLO DE ESTE PROYECTO ESTARÉ USANDO LA METODOLOGIA BEM
+COMENTADO CADA BLOQUE DE CODIGO, SUS ELEMENTOS Y MODIFICADORES EN ESE ORDEN*/
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    margin: 0;
+    background-color: rgb(202, 202, 202);
+}
+
+section {
+    margin: 0em 0;
+}
+
+.container {
+    display: flex;
+}
+
+
+/* HEADER */
+
+.header {
+    height: 3em;
+    width: 100%;
+    background-color: black;
+}
+
+
+/* ELEMENTOS DEL HEADER */
+
+.header__1 {
+    width: 60%;
+    gap: 2%
+}
+
+.header__2 {
+    width: 40%;
+}
+
+.header__Element {
+    display: flex;
+    height: 90%;
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__Element > ion-icon{
+    font-size: 2em;
+    color: white
+}
+
+.header__2 {
+    justify-content: end;
+    padding: 0 1%;
+}
+
+
+/* SECTION 1, TITULO Y DESCRIPCION */
+
+.section1 {
+    background-color: white;
+    height: 20em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.section1__h1 {
+    text-align: center;
+    font-size: 5em;
+    margin: 0;
+}
+
+.section1__descripcion {
+    width: 100%;
+    justify-content: center;
+}
+
+.section1__descripcion > p{
+    font-size: 1.5em;
+    margin: 0;
+    width: auto;
+    padding: 0.3em;
+}
+
+.descripcion__p {
+    text-align: right;
+    color: black;
+}
+
+.descripcion__p2 {
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+
+/* SECTION 2, IMAGEN, TITULO Y BOTÓN SUSCRIBE */
+
+.section2 {
+    width: 100%;
+    height: 50em;
+    margin: 0 0 1em 0;
+}
+
+.section2 div {
+    background-image: url("./images/modelo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+}
+
+/* SECTION 2 ELEMENTOS  */
+
+.section2__h3 {
+    font-size: 3em;
+    color: white;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section2__h1 {
+    color: white;
+    font-size: 6em;
+    margin: 0;
+}
+
+.section2__button {
+    color: black;
+    background: #bbbbbb80;
+    font-size: 1.1em;
+    padding: 1em;
+    font-weight: bold;
+    width: 10em;
+
+}
+
+/* SECTION 3 ARTICULOS DEL BLOG */
+
+.section3 {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* SECTION 3 ELEMENTOS  */
+
+
+.section3__articulo {
+    background-color: white;
+    height: auto;
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
+}
+/* ARTICULOS ELEMENTOS  */
+
+.articulo__h1 {
+    text-align: center;
+    font-size: 2em;
+    color: black;
+}
+
+.articulo__h4 {
+    text-align: center;
+    font-size: 1em;
+    color: black;
+}
+
+.articulo__div {
+    height: 30%;
+    width: 90%;
+}
+
+.articulo__div__img {
+    height: 100%;
+    width: 100%;
+}
+
+.articulo__p {
+    height: auto;
+    width: 90%;
+}
+
+/* RESPONSIVE MOBILE */
+
+@media (max-width: 576px) { 
+
+    /* OCULTAR HEADER */
+
+    .header {
+        display: none;
+    }
+
+    /* SECTION 1 REDUCION DE FONT-SIZE */
+    
+    .section1__h1{
+        font-size: 2.5em;
+    }
+
+    .section1__descripcion > p{
+        font-size: 1em;
+    }
+    
+    /* SECTION 2 REDUCION DE FONT-SIZE E IMAGEN*/
+
+    .section2 {
+        height: 20em;
+    }
+
+    .section2__h3 {
+        font-size: 3em;
+    }
+
+    .section2__h1 {
+        display: none;
+    }
+    .section2__button {
+        font-size: 1em;
+    }
+
+ }
